@@ -17,7 +17,7 @@ It can be used as dependency in Java projects to performa encryption/decryption 
 
 <a name="contact"></a>
 ## My contact
-eluzgin@gmail.com
+Eugene Luzgin - EOS Tribe - eugene@eostribe.io - TG: @eluzgin
   
 <a name="lincense"></a>
 ## License
