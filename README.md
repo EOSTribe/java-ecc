@@ -1,6 +1,8 @@
 # ECC Cryptographic module for EOS chain
 
-This ECC model is refactored out from original sources for EOS Commander.
+This ECC model is refactored out from original sources for EOS Commander:
+
+https://github.com/playerone-id/EosCommander 
   
 Our thanks go to PlayerOne for developing it. See License notice below.
 
