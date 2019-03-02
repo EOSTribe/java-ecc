@@ -6,9 +6,13 @@ https://github.com/playerone-id/EosCommander
   
 Our thanks go to PlayerOne for developing it. See License notice below.
 
+### Use
+Just fetch java-ecc.jar file and import into your project:
 
-### Build
-On the console type:
+https://github.com/EOSTribe/java-ecc/blob/master/java-ecc.jar?raw=true
+
+### Rebuild
+Should yuu need to rebuild for particular Java version:
 
 	After checkout run: 'gradle jar' to build jar library of the sources.
 
