@@ -102,26 +102,6 @@ public class EosPublicKey {
 
         return EosEcUtil.encodeEosCrypto( isR1 ? PREFIX : LEGACY_PREFIX, isR1 ? mCurveParam : null, mData );
 
-//        byte[] postfixBytes = isR1 ? EosEcUtil.PREFIX_R1.getBytes() : new byte[0] ;
-//        byte[] toDigest = new byte[mData.length + postfixBytes.length];
-//        System.arraycopy( mData, 0, toDigest, 0, mData.length);
-//
-//        if ( postfixBytes.length > 0) {
-//            System.arraycopy(postfixBytes, 0, toDigest, mData.length, postfixBytes.length);
-//        }
-//
-//        byte[] digest = Ripemd160.from( toDigest ).bytes();
-//        byte[] result = new byte[ CHECK_BYTE_LEN + mData.length];
-//
-//        System.arraycopy( mData, 0, result, 0, mData.length);
-//        System.arraycopy( digest, 0, result, mData.length, CHECK_BYTE_LEN);
-//
-//        if ( isR1 ){
-//            return EosEcUtil.concatEosCryptoStr(PREFIX , EosEcUtil.PREFIX_R1, Base58.encode( result ) );
-//        }
-//        else {
-//            return LEGACY_PREFIX + Base58.encode( result ) ;
-//        }
     }
 
     @Override
