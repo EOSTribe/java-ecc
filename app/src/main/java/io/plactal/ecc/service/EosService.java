@@ -1,4 +1,4 @@
-package io.plactal.ecc.main;
+package io.plactal.ecc.service;
 
 import io.plactal.ecc.crypto.ec.EosPrivateKey;
 import io.plactal.ecc.crypto.ec.EosPublicKey;
@@ -9,7 +9,7 @@ import io.plactal.ecc.crypto.digest.Sha256;
 import org.json.JSONObject;
 
 
-public class EosSigner {
+public class EosService {
 
 
     public static String generateKeys() {
@@ -29,10 +29,10 @@ public class EosSigner {
     }
 
     public static void main(String[] args) {
-        System.out.println("Generate Keys: "+EosSigner.generateKeys());
+        System.out.println("Generate Keys: "+EosService.generateKeys());
         EosPrivateKey privateKey = new EosPrivateKey();
         String text = "Hello World!";
-        System.out.println("Signature: "+EosSigner.signText(text, privateKey.toString()));
+        System.out.println("Signature: "+EosService.signText(text, privateKey.toString()));
     }
 
 }
